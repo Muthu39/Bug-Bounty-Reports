@@ -24,6 +24,8 @@ jobs:
 
       - name: Commit and push SVG
         run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
           git add report-temp.svg
-          git commit -m "Auto-generate report-summary.svg" || echo "No changes"
-          git push
+          git commit -m "Auto-generate report-temp.svg" || echo "No changes"
+          git push origin main
