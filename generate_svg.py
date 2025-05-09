@@ -38,7 +38,7 @@ svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="500" height="20
 '''
 
 # Save to file
-with open("report-summary.svg", "w") as f:
+with open("report-test.svg", "w") as f:
     f.write(svg_content)
 
-print("✅ SVG generated as report-summary.svg")
+print("✅ SVG generated as report-test.svg")
