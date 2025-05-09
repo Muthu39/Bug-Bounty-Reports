@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="200" viewBox="0 0 500 200">
+  <a href="https://github.com/Muthu39/Bug-Bounty-Reports.git" target="_blank">
+    <style>
+      .label { fill: white; font-family: Arial, sans-serif; font-size: 14px; }
+      .count { fill: white; font-family: Arial, sans-serif; font-size: 28px; font-weight: bold; }
+      .circle-label { fill: orange; font-family: Arial, sans-serif; font-size: 40px; font-weight: bold; }
+    </style>
+
+    <!-- Background -->
+    <rect width="500" height="200" fill="black" rx="10" />
+
+    <!-- Left Section -->
+    <text x="60" y="80" class="label" text-anchor="middle">Duplicate</text>
+    <text x="60" y="100" class="label" text-anchor="middle">Reports</text>
+    <text x="60" y="140" class="count" text-anchor="middle">1</text>
+
+    <!-- Center Section -->
+    <circle cx="250" cy="100" r="40" fill="none" stroke="orange" stroke-width="4" />
+    <text x="250" y="108" class="circle-label" text-anchor="middle" dominant-baseline="middle">2</text>
+    <text x="250" y="160" class="label" text-anchor="middle">Total Reports</text>
+
+    <!-- Right Section -->
+    <text x="440" y="80" class="label" text-anchor="middle">Successful</text>
+    <text x="440" y="100" class="label" text-anchor="middle">Reports</text>
+    <text x="440" y="140" class="count" text-anchor="middle">2</text>
+  </a>
+</svg>
