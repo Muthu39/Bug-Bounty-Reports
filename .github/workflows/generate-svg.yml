@@ -3,8 +3,8 @@ name: Generate SVG Report
 on:
   push:
     paths:
-      - 'Duplicate-Report/**'
-      - 'Successful-Report/**'
+      - 'Duplicate-Reports/**'
+      - 'Successful-Reports/**'
   workflow_dispatch:
 
 jobs:
