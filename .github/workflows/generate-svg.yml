@@ -1,0 +1,29 @@
+name: Generate SVG Report
+
+on:
+  push:
+    paths:
+      - 'Duplicate-Report/**'
+      - 'Successful-Report/**'
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run report generator
+        run: python3 generate_svg.py
+
+      - name: Commit and push SVG
+        run: |
+          git add report-temp.svg
+          git commit -m "Auto-generate report-summary.svg" || echo "No changes"
+          git push
